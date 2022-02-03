@@ -11,6 +11,9 @@ import { LeftMenuComponent } from './header/widgets/left-menu/left-menu.componen
 import { NavbarComponent } from './header/widgets/navbar/navbar.component';
 import { SettingComponent } from './header/widgets/setting/setting.component';
 import { TopbarComponent } from './header/widgets/topbar/topbar.component';
+import { RouterModule } from '@angular/router';
+import {TranslateModule} from '@ngx-translate/core';
+
 
 
 
@@ -29,7 +32,13 @@ import { TopbarComponent } from './header/widgets/topbar/topbar.component';
     TopbarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    TranslateModule
+  ],
+  exports:[
+    HeaderOneComponent,
+    FooterOneComponent
   ]
 })
 export class SharedModule { }

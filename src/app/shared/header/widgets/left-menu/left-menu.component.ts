@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Menu, MENUITEMS } from './left-menu-items';
 
 @Component({
   selector: 'app-left-menu',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeftMenuComponent implements OnInit {
 
+  menuItems: Menu[];
+
   constructor() { }
 
   ngOnInit(): void {
+    this.menuItems = MENUITEMS;
   }
 
 }

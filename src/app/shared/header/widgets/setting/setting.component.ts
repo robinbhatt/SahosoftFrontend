@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-setting',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./setting.component.scss']
 })
 export class SettingComponent implements OnInit {
-
-  constructor() { }
+  constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {
   }
 
+  changeLanguage(lang:any) {
+    this.translate.use(lang);
+  }
 }

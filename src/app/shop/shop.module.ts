@@ -24,6 +24,15 @@ import { CategoriesComponent } from './product/widgets/categories/categories.com
 import { NewProductComponent } from './product/widgets/new-product/new-product.component';
 import { WishlistComponent } from './product/wishlist/wishlist.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
+import { Ng5SliderModule } from 'ng5-slider';
+import { NgxImageZoomModule } from 'ngx-image-zoom';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { BarRatingModule } from 'ngx-bar-rating';
+
+
 
 @NgModule({
   declarations: [
@@ -51,7 +60,15 @@ import { WishlistComponent } from './product/wishlist/wishlist.component';
   ],
   imports: [
     CommonModule,
-    ShopRoutingModule
+    ShopRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    SharedModule,
+    Ng5SliderModule,
+    NgxImageZoomModule,
+    InfiniteScrollModule,
+    SlickCarouselModule,
+    BarRatingModule
   ]
 })
 export class ShopModule { }

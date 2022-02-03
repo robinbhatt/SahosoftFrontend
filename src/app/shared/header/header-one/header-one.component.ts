@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { LandingFixService } from '../../services/landing-fix.service';
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-header-one',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderOneComponent implements OnInit {
 
-  constructor() { }
+  constructor(private fix: LandingFixService) { }
 
   ngOnInit(): void {
+    $.getScript('assets/js/menu.js');
   }
+
+  openNav() {
+    this.fix.addNavFix();
+  }
+  closeNav() {
+    this.fix.removeNavFix();
+  }
+
 
 }
