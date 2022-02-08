@@ -22,8 +22,7 @@
                     [config]="productSliderConfig">
                         <!-- <div ngxSlickItem class="product-box" *ngFor="let product of products | slice:0:16"> -->
                         <div ngxSlickItem class="product-box" *ngFor="let product of products">
-                            <!-- Show Product Here -->
-                            <app-product></app-product>
+                            <app-product [product]="product" ></app-product>
                         </div>
                 </ngx-slick-carousel>
             </div>

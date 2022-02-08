@@ -75,4 +75,8 @@ export class ProductsService {
     localStorage.setItem("compareItem", JSON.stringify(this.products));
   }
 
+  getProductById(id: number): Observable<any> {
+    return this._dataService.get(Global.FireBase_BASE_API_PATH + `ProductMaster/GetAll/${id}.json`);
+  }
+
 }

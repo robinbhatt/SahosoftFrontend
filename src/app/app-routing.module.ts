@@ -4,7 +4,7 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'landingpage', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'landingpage', component: LandingpageComponent },
   {
     path: '', component: MainComponent, children: [

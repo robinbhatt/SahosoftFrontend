@@ -15,5 +15,8 @@ export interface Product {
     tags?: any[];
     size?: any[];
     variants?: any[];
+    dwnldUrl?: any[];
+    quantity?:number;
+    sizeId?:any
 }
 

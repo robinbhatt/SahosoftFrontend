@@ -22,7 +22,7 @@ export class ProductComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    console.log(this.product);
+    // console.log(this.product);
   }
 
   changeVarientImage(image: any) {
